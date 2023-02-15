@@ -1,6 +1,6 @@
 {
   "name": "react-accordion-seo",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Customisable accordion component built with React",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
