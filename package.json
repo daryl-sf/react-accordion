@@ -1,0 +1,38 @@
+{
+  "name": "react-collaccordion-seo",
+  "version": "0.0.0",
+  "description": "Customisable accordion component built with React",
+  "main": "./dist/accordion.umd.js",
+  "module": "./dist/accordion.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/accordion.es.js",
+      "require": "./dist/accordion.umd.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build"
+  },
+  "keywords": ["react", "accordion", "collapsible", "seo", "react-accordion", "seo-friendly"],
+  "author": "Daryl Findlay",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/daryl-sf/react-accordion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daryl-sf/react-accordion/issues"
+  },
+  "homepage": "https://github.com/daryl-sf/react-accordion#readme",
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "@types/react": "^18.0.28",
+    "@vitejs/plugin-react": "^3.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.15.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.1"
+  }
+}
