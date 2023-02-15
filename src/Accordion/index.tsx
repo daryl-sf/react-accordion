@@ -1,4 +1,4 @@
-import React, { ReactNode, useState, useRef } from "react";
+import React, { ReactNode, useState, useRef, useEffect } from "react";
 import './styles.css'
 
 // This accordion transitions max-height from 0 to x and vice versa when expanded state changes.
@@ -24,8 +24,13 @@ const Accordion = ({
   className = "",
 }: IAccordionProps) => {
   const [expanded, setExpanded] = useState(initExpanded);
+  const [maxHeight, setMaxHeight] = useState(0);
   const heightRef = useRef<HTMLDivElement>(null);
-  const maxHeight = (heightRef.current?.clientHeight || 0) + 5;
+
+  useEffect(() => {
+    setMaxHeight(heightRef.current?.clientHeight || 0);
+  }, [heightRef]);
+
   return (
     <div className={`container ${className}`} id={id}>
       {renderSummary({ onClick: () => setExpanded(!expanded), expanded })}
