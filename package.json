@@ -10,7 +10,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "npm run test:unit",
-    "build": "rollup -c",
+    "build": "rollup -c --bundleConfigAsCjs",
     "clean": "rm -rf dist/",
     "test:unit": "jest"
   },
