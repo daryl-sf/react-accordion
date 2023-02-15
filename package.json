@@ -2,15 +2,11 @@
   "name": "react-accordion-seo",
   "version": "0.0.2",
   "description": "Customisable accordion component built with React",
-  "main": "./dist/accordion.umd.js",
-  "module": "./dist/accordion.es.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": ["dist"],
+  "types": "dist/index.d.ts",
   "type": "module",
-  "exports": {
-    ".": {
-      "import": "./dist/accordion.es.js",
-      "require": "./dist/accordion.umd.js"
-    }
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
@@ -24,7 +20,7 @@
     "react-accordion",
     "seo-friendly"
   ],
-  "author": "Daryl Findlay",
+  "author": "Daryl Findlay <darylfindlay@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
