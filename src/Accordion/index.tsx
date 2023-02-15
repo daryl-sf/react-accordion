@@ -30,13 +30,12 @@ const Accordion = ({
     <div className={`container ${className}`} id={id}>
       {renderSummary({ onClick: () => setExpanded(!expanded), expanded })}
       <div
-        data-qa="accordion-detail"
         className={`detail ${expanded ? expanded : '' }`}
         style={{
           maxHeight: expanded ? maxHeight : 0,
         }}
       >
-        <div data-qa="height-ref" className="heightRef" ref={heightRef}>
+        <div className="heightRef" ref={heightRef}>
           {renderDetail}
         </div>
       </div>

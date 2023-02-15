@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion initExpanded = true renders accordion with maxHeight != 0 1`] = `
+<DocumentFragment>
+  <div
+    class="container "
+    id="testAccordion"
+  >
+    <div>
+      This is an accordion. 
+      <button
+        type="button"
+      >
+        Click me to collapse
+      </button>
+    </div>
+    <div
+      class="detail true"
+      style="max-height: 5px;"
+    >
+      <div
+        class="heightRef"
+      >
+        <div
+          style="height: 30px;"
+        >
+          This is an accordion
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Accordion renders the Accordion component without error 1`] = `
+<DocumentFragment>
+  <div
+    class="container "
+    id="testAccordion"
+  >
+    <div>
+      This is an accordion. 
+      <button
+        type="button"
+      >
+        Click me to expand
+      </button>
+    </div>
+    <div
+      class="detail "
+      style="max-height: 0;"
+    >
+      <div
+        class="heightRef"
+      >
+        <div>
+          This is an accordion
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
