@@ -1,6 +1,6 @@
 {
-  "name": "react-collaccordion-seo",
-  "version": "0.0.0",
+  "name": "react-accordion-seo",
+  "version": "0.0.1",
   "description": "Customisable accordion component built with React",
   "main": "./dist/accordion.umd.js",
   "module": "./dist/accordion.es.js",
