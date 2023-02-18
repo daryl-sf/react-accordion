@@ -19,7 +19,8 @@ yarn add react-accordion-seo
 ```
 
 ## Example
-[Example usaged](https://63f15f4902135ed855dbdbee-hkdkwdjnmf.chromatic.com/?path=/story/accordion--accordion-story)
+
+[Example usage](https://63f15f4902135ed855dbdbee-hkdkwdjnmf.chromatic.com/?path=/story/accordion--accordion-story)
 
 ## Usage
 
@@ -87,4 +88,5 @@ const Example = () => (
 `className?: string;` Optional: classes that can be used to overwrite default styles on containing div.
 
 ## License
+
 MIT
