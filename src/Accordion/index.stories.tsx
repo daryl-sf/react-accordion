@@ -7,7 +7,7 @@ export default {
 } as ComponentMeta<typeof Accordion>;
 
 const AccordionTemplate: ComponentStory<typeof Accordion> = () => (
-  <div style={{ width: "600px" }}>
+  <div style={{ width: "600px", fontFamily: "sans-serif" }}>
     <Accordion
       id="first"
       renderSummary={({ onClick, expanded }) => (
