@@ -51,7 +51,7 @@ const Example = () => (
   <div style={{ width: "600px", fontFamily: "sans-serif" }}>
     <Accordion
       id="first"
-      renderSummary={Summary}
+      renderSummary={({ onClick, expanded }) => <Summary onClick={onClick} expanded={expanded} />}
       renderDetail={
         <div>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
